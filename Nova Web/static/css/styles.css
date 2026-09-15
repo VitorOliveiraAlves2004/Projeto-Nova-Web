@@ -1,0 +1,46 @@
+/*
+Descricao: Projeto Nova Web - Situação de aprendizagem 1
+nome_arquivo: index.html
+nome_exercicio: Projeto Nova Web - Situação de aprendizagem 1
+nome_aluno: Vítor Oliveira Alves
+email_aluno: vitor.alves19@aluno.cps.sp.gov.br
+turma: Código da Turma
+*/
+
+/* Seletor universal, zera margens... */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+header {
+    background-color: antiquewhite;
+}
+
+nav {
+    border: 1px solid;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    background-color: aquamarine;
+    min-height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+footer {
+    background-color: brown;
+    min-height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+}
