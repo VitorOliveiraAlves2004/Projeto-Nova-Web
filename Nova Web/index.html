@@ -4,39 +4,103 @@ nome_arquivo: index.html
 nome_exercicio: Projeto Nova Web - Situação de aprendizagem 1
 nome_aluno: Vítor Oliveira Alves
 email_aluno: vitor.alves19@aluno.cps.sp.gov.br
-turma: Código da Turma
+turma: A1129-N-D.S.M.-312-20262
 -->
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Web - Home</title>
+    <title>Blog WebNova | Home</title>
 
-    <!-- Estilos da Página -->
-     <link rel="stylesheet" href="static/css/styles.css"
+    <link rel="stylesheet" href="static/css/styles.css">
+
 </head>
 <body>
 
-    <!-- Aqui vai o cabeçalho da página, logo navegação -->
+    <!-- Cabeçalho do site -->
     <header>
+        <h1>Blog WebNova</h1>
+        <p>Seu portal de notícias sobre tecnologia e inovação</p>
+
+        <!-- Menu de navegação -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Conteúdo pricipal, isso aqui vai mudar de página para página -->
-     <main>
-        <h1>Título da página</h1>
-     </main>
+    <!-- Conteúdo principal do site -->
+    <main>
+        <!-- Seção de posts do blog -->
+        <section class="posts-container">
+            <h2>Últimas Notícias</h2>
 
-     <!-- Rodapé não muda -->
-      <footer>
+            <!-- Post 1 -->
+             <article class="card-post">
+                <h3>Xiaomi Libera novidades sobre a HyperOS 4</h3>
+                <p class="data-post">Publicado em 28 de setembro de 2026</p>
+                <img src="static/images/xiaomi-hyperos-4.jpeg" alt="Imagem de apresentação HyperOS 4 com nova hyperisland">
+                <p>A Xiaomi anunciou recentemente a chegada da HyperOS 4, a nova versão de seu sistema operacional. A atualização traz uma série de melhorias e recursos inovadores, incluindo uma interface mais intuitiva e suporte aprimorado para dispositivos de última geração.</p>
+                <a href="#">Leia mais</a>
+             </article>
+             
+            <!-- Post 2 -->
+             <article class="card-post">
+                <h3>Iphone Duo, primeiro dobrável da apple</h3>
+                <p class="data-post">Publicado em 24 de setembro de 2026</p>
+                <img src="static/images/iphone-duo.jpg" alt="Iphone Duo, primeiro dobrável da apple">
+                <p>A Apple anunciou recentemente o lançamento do Iphone Duo, seu primeiro smartphone dobrável. O dispositivo apresenta um design inovador, permitindo que os usuários desfrutem de uma tela maior quando necessário, enquanto mantém a portabilidade de um smartphone tradicional.</p>
+                <a href="#">Leia mais</a>
+             </article>
+            
+            <!-- Post 3 -->
+             <article class="card-post">
+                <h3>Vazamentos do novo Galaxy S27 ultra</h3>
+                <p class="data-post">Publicado em 20 de setembro de 2026</p>
+                <img src="static/images/vazamento-s27ultra.jpg" alt="Vazamento do novo Galaxy S27 ultra">
+                <p>O Samsung está preparando o lançamento do Galaxy S27 ultra, seu mais recente smartphone da linha premium. O dispositivo promete trazer avanços significativos em termos de desempenho, câmera e design.</p>
+                <a href="#">Leia mais</a>
+             </article>
+        </section>
 
-      </footer>
+        <!-- Seção de programação da semana--> 
+         <section class="programacao-semanal">
+            <h2>Cronograma da Semana</h2>
+            <table>
+                <tr>
+                    <th>Dia</th>
+                    <th>Categoria</th>
+                    <th>Assunto</th>
+                </tr>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>Games</td>
+                    <td>Lançamentos mais aguardados</td>
+                </tr>
+
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>Smartphones</td>
+                    <td>Novidades do mercado</td>
+                </tr>
+
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>Inovação</td>
+                    <td>Novas IAs e softawares para o mercado</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2026 Blog WebNova. Todos os direitos reservados.</p>
+    </footer>
+    
 </body>
 </html>

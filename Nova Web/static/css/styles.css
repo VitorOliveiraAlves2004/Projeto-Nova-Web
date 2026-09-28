@@ -4,43 +4,242 @@ nome_arquivo: index.html
 nome_exercicio: Projeto Nova Web - Situação de aprendizagem 1
 nome_aluno: Vítor Oliveira Alves
 email_aluno: vitor.alves19@aluno.cps.sp.gov.br
-turma: Código da Turma
+turma: A1129-N-D.S.M.-312-20262
 */
 
-/* Seletor universal, zera margens... */
+/* Configurações gerais */
+
 *{
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: antiquewhite;
+    background-color: #3761a0;
+    color: #e2e8f0;
+    padding: 32px 16px 16px 16px;
+    text-align: left;
 }
 
-nav {
-    border: 1px solid;
-    margin-top: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+header h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 50px;
+    color: #091c38;
+    margin-bottom: 0px;
 }
+
+header p {
+    font-family: Arial, sans-serif, bold;
+    font-size: 18px;
+    color: #e2e8f0;
+    margin-top: 0px;
+}
+
+/* Estilo do menu de navegação */
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: bold;
+    padding: 4px 4px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #091c38;
+    color: #3761a0;
+}
+
+/* Estilo do conteúdo principal */
 
 main {
-    background-color: aquamarine;
-    min-height: 400px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 32px auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    padding: 32px;
 }
 
-footer {
-    background-color: brown;
-    min-height: 150px;
-    margin-top: 10px;
-    padding: 10px;
+h2{
+    color: #091c38;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+h3{
+    color: #3761a0;
+    margin: 24px 0 8px 0;
+}
+
+p{
+    margin-bottom: 16px;
+}
+
+.card-post {
+    background-color: #e6e6e6;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.data-post{
+    font-size: 13.6px;
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 16px 0;
+    display: block;
+}
+
+/* Todos os Links */
+
+a{
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Estilizando as listas */
+
+.principais-temas, .nossos-valores{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+ul, ol{
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+/*Estilizando tabelas*/
+
+.programacao-semanal{
+    margin-top: 32px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+th, td{
+    padding: 12px 16px;
+    text-align: left;
+}
+
+th{
+    background-color: #3761a0;
+    color: #e6e6e6;
+    font-weight: 600;
+}
+
+tr:nth-child(even){
+    background-color: #e2e8f0;
+}
+
+/*Formulário de contato*/
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 24px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+label{
+    font-weight: 600;
+    color: #091c38;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-family: arial;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border-color: #3761a0;
+}
+
+.botao-enviar{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'arial black';
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background-color: #3761a0;
+    transition: background-color 0.3s;
+    align-self: flex-end;
+}
+
+.botao-enviar:hover{
+    background-color: #091c38;
+}
+
+footer{
+    background-color:#3761a0;
+    color: #e2e8f0;
+    text-align: left;
+    padding: 24px;
+    margin-top: auto;
+    font-size: 14;
 }

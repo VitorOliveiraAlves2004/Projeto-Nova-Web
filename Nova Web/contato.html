@@ -1,0 +1,78 @@
+<!--
+Descricao: Projeto Nova Web - Situação de aprendizagem 1
+nome_arquivo: index.html
+nome_exercicio: Projeto Nova Web - Situação de aprendizagem 1
+nome_aluno: Vítor Oliveira Alves
+email_aluno: vitor.alves19@aluno.cps.sp.gov.br
+turma: A1129-N-D.S.M.-312-20262
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog WebNova | Contato</title>
+
+    <link rel="stylesheet" href="static/css/styles.css">
+
+</head>
+<body>
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Blog WebNova</h1>
+        <p>Seu portal de notícias sobre tecnologia e inovação.</p>
+
+        <!-- Menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao-contato">
+            <h2>Contato</h2>
+            <p>Se você tiver alguma dúvida, sugestão ou quiser entrar em contato conosco, preencha o formulário abaixo:</p>
+
+            <form action="#" method="POST" class="form-contato">
+                <div class="campo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto">
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </div>
+
+                <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2026 Blog WebNova. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
